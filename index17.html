@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Input field -->
+<input type="text" id="name">
+
+<!-- Submit button -->
+<button onclick="check()">Submit</button>
+<!-- Message display -->
+<p id="msg"></p>
+<script>
+function check(){
+// Get user input
+let x = document.getElementById("name").value;
+// Check if input is empty
+if(x == "")
+// Show error message
+document.getElementById("msg").innerHTML = "Name Required";
+else
+// Show success message
+document.getElementById("msg").innerHTML = "Form Submitted";
+}
+</script> 
+</body>
+</html>
